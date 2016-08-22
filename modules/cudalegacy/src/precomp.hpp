@@ -48,7 +48,10 @@
 #include <algorithm>
 
 #include "opencv2/cudalegacy.hpp"
+#include "opencv2/imgproc/types_c.h"
 #include "opencv2/core/utility.hpp"
+#include "opencv2/core/private.hpp"
+#include "opencv2/core/private.cuda.hpp"
 
 #include "opencv2/opencv_modules.hpp"
 

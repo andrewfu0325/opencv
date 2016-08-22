@@ -284,7 +284,11 @@ CV_EXPORTS void solvePnPRansac(const Mat& object, const Mat& image, const Mat& c
                                std::vector<int>* inliers=NULL);
 
 //! @}
-
+//
+///////////////////////////// Grabcut ////////////////////////////////
+CV_EXPORTS void grabCut( InputArray _img, InputOutputArray _mask, Rect rect,
+                        InputOutputArray _bgdModel, InputOutputArray _fgdModel,
+                        int iterCount, int mode ,Stream &stream = Stream::Null());
 }}
 
 #endif /* __OPENCV_CUDALEGACY_HPP__ */
